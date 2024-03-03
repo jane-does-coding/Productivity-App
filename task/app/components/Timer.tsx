@@ -7,6 +7,8 @@ import "react-circular-progressbar/dist/styles.css";
 import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
 import SettingsButton from "./SettingsButton";
+import { useContext } from "react";
+import SettingsContext from "../contexts/SettingsContext";
 
 const Timer = () => {
   return (

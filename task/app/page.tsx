@@ -6,13 +6,15 @@ import Timer from "./components/Timer";
 import SettingsContext from "./contexts/SettingsContext";
 
 export default function Home() {
-  const [showSettings, setShowSettings] = useState(true);
+  const [showSettings, setShowSettings] = useState(false);
   const [workMinutes, setWorkMinutes] = useState(45);
   const [breakMinutes, setBreakMinutes] = useState(15);
 
   return (
     <SettingsContext.Provider
       value={{
+        showSettings,
+        setShowSettings,
         workMinutes: workMinutes,
         breakMinutes: breakMinutes,
         setWorkMinutes: setWorkMinutes,
